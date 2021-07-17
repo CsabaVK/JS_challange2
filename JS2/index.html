@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="/img/icon3.png">
+
+    <title>TimeX</title>
+    <script src="/javascript.js"></script>
+</head>
+<body onload="startTime()">
+   
+    <div class="row p-5">
+
+        <div class="col-6 potrafont">
+            <div>
+                <span class="fs-2">Livetime in other cities</span>
+                <p class="mt-2">
+                    <div class="row fs-3">
+                        <div class="col">Bangkok:</div>
+                        <div class="col text-end"><span id="bangkok"></span></div>
+                    </div>
+                </p>
+                <p class="fs-3">
+                    <div class="row fs-3">
+                        <div class="col">Dubai:</div>
+                        <div class="col text-end"><span id="dubai"></span></div>
+                    </div>
+                </p>
+                <p class="fs-3">
+                    <div class="row fs-3">
+                        <div class="col">Toronto:</div>
+                        <div class="col text-end"><span id="toronto"></span></div>
+                    </div>
+                </p>
+                <p class="fs-3">
+                    <div class="row fs-3">
+                        <div class="col">San Francisco:</div>
+                        <div class="col text-end"><span id="sf"></span></div>
+                    </div>
+                </p>
+            </div>
+            <div>
+                
+            </div>
+            
+        </div>
+
+        <div class="col-6 text-center">
+            <div class="potrafont fs-1">
+                <div>
+                    <div class="row mx-5">
+                        <div class="col">
+                            <div class="">
+                                <img onclick="earth()" id="earth1" class="photo border border-success border-3 rounded m-3 p-2" src="/img/earth.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="">
+                                <img onclick="mars()" id="mars1" class="photo border border-3 rounded m-3 p-2" src="/img/mars.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <span>Livetime here</span>
+                <br>
+                <span id="livetime"></span>
+                <br>
+                <div class="fs-3 pt-4">
+                    <button class="btn btn-primary" type="button" onclick="plush()">+1h</button>
+                    <button class="btn btn-primary" type="button" onclick="minush()">-1h</button>
+                    <p>Hours difference: <a id="clickme">0</a></p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+
+
+    
+
+</body>
+</html>
